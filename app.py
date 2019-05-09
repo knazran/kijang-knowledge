@@ -8,9 +8,9 @@ import datetime
 application = Flask(__name__)
 # app = Flask(__name__)
 
-@application.route("/")
-def hello():
-    return "Hello World!"
+# @application.route("/")
+# def hello():
+#     return "Hello World!"
 
 '''
 FinsNet Explorer App
@@ -20,6 +20,7 @@ To-Do: Split this into multiple files
 def result():
     return render_template('home.html')
 
+@application.route("/")
 @application.route("/home",methods=['GET', 'POST'])
 def home():
     return render_template('home.html')
