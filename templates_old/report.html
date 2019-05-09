@@ -1,0 +1,110 @@
+{% extends "index.html" %}
+<!-- Content template -->
+{% block content %}
+  
+  <div class="panel panel-primary">
+  <div class="panel-heading">
+  	<h4> {{ report_name }}</h4>
+  </div>
+  <div class="panel-body">
+  	<p> {{ report_desc }}</p>
+  </div>
+  </div>
+  <div >
+  	<div class="panel-body">
+  	<ul class="list-group">
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Type </strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Periodicity </strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Last Updated</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Database</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Category</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Update Frequency</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Update Schedule</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Attribution/Citation</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Coverage</strong> :
+  	  </li>
+  	  <li class="list-group-item" style="border-color: transparent">
+  	  <strong>Published/Not Published</strong> :
+  	  </li>
+  	</ul>
+  	<!-- <h4>Data Items </h4>
+  		<p> {{ report_desc }}</p> -->
+  	</div>
+  </div>
+  <!-- <div >
+  	<div class="panel panel-primary">
+  		<div >
+  		<h4> Data Items in this Report</h4>
+  		</div>
+  		<div class="panel-body">
+  		<ul class="list-group">
+  			{% for n in results %}
+  			<li>{{n['title'] }}</li>
+  			{% endfor %}
+  		</ul>
+  		</div>
+  	</div>
+  </div> -->
+  <!-- {% for n in results %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4>{{n['title'] }}</h4>
+    </div>
+    <div class="panel-body">
+      <p>Category: {{ n['category'] }}</p>
+      <p>Database: {{ n['db'] }}</p>
+      <p>Report: {{ n['report'] | format_report}}</p>
+      <p>Item ID:  {{ n['id']}} </p>
+      <p>Description: {{ n['desc'] }}</p>
+    </div>
+  </div>
+  {% endfor %} -->
+{% endblock %}
+
+<!-- Side bar template -->
+{% block sidebar %}
+<div class="panel panel-primary">
+  <div class="panel panel-heading">
+    <h4><span class="fa fa-database" style="top:2px"></span>
+   Download Report</h4>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <h5>
+    	<a href="{{ url_for('DownloadXLSXData', dataset= download_link)}}">
+    	<span class="fa fa-file-excel-o" style="top:2px"></span>	
+        Excel 
+         </a>
+     </h5>
+    </li>
+    <li class="list-group-item">
+    <h5>
+    	<a href="{{ url_for('home') }}">
+    	<span class="fa  fa-file-code-o" style="top:2px"></span>	
+        API 
+         </a>
+     </h5>
+    </li>
+  </ul>
+ 
+  <!-- <span class="glyphicon-class">Excel</span> -->
+ <!-- </div> -->
+</div>
+{% endblock %}

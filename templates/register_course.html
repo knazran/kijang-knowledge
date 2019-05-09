@@ -1,0 +1,119 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-9 grid-margin stretch-card " style='width:85%; margin-left: auto; margin-right: auto'>
+      <div class="card">
+          <div class="card-header bg-success">
+              <p class="card-title"style="margin:0px; color:white">You Are Registering for the Course Below:</p>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
+              <p class="card-text"><small class="text-muted">Posted today</small></p>
+              <p class="card-text"><small class="text-muted">Tags: Economics, Research Methods</small></p>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              
+              <br>
+              <h5 class="card-title" style='margin-bottom:16px'>Course Pre-Requisite</h5>
+              <p class="card-text">Gotta be BNM staff and kinda smart, I guess?</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+<div class="col-9 grid-margin stretch-card" style='width:85%; margin-left: auto; margin-right: auto'>
+    <div class="card">
+      <div class="card-header">
+          <p class="card-title"style="margin:0px; ">Registration Form</p>
+      </div>
+      <div class="card-body">
+          <!-- <h4 class="card-title">Basic form elements</h4>
+          <p class="card-description">
+            Basic form elements
+          </p> -->
+          <form class="forms-sample" action="{{ url_for('course_page') }}">
+            <div class="form-group">
+              <label for="exampleInputName1">Name</label>
+              <input type="text" class="form-control" id="exampleInputName1" placeholder="Khairul Nazran" disabled>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail3">Staff ID</label>
+              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="0000000" disabled>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword4">Department</label>
+              <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Jabatan Perkhidmatan Statistik" disabled>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword5">Designation</label>
+                <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Associate Analyst" disabled>
+              </div>
+            <div class="form-group">
+                <label for="budgetcenter">Budget Centre / Admin Centre</label>
+                <input type="password" class="form-control" id="budgetcenter" placeholder="MSSA" disabled>
+              </div>
+            <div class="form-group">
+              <label for="exampleSelectApprover1">Immediate Supervisor</label>
+                <select class="form-control" id="exampleSelectApprover">
+                  <option>Small Boss A</option>
+                  <option>Small Boss B</option>
+                </select>
+              </div>
+            <div class="form-group">
+              <label for="exampleSelectApprover">Approver</label>
+                <select class="form-control" id="exampleSelectApprover">
+                  <option>Big Boss A</option>
+                  <option>Big Boss B</option>
+                </select>
+              </div>
+            <div class="form-group">
+              <label for="exampleTextarea1">Current Job Responsibilities</label>
+              <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea2">Current Projects Related to the Proposed Learning Programme</label>
+              <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleTextarea3">Relevance of the Programme as Outlined in Individual Development Plan</label>
+                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleTextarea4">Future Use of Knowledge</label>
+                <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+              </div>
+            <div class="form-group">
+              <label>Supporting Documents</label>
+              <input type="file" name="img[]" class="file-upload-default">
+              <div class="input-group col-xs-12">
+                <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
+                <span class="input-group-append">
+                  <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                </span>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button class="btn btn-light">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- <div class="row">
+  <div class="col-md-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-header">
+            <p class="card-title"style="margin:0px;">Course Materials</p>
+        </div>
+        <div class="card-body">
+            <p class="card-text text-muted">No course material posted yet</p>
+        </div>
+      </div>
+  </div>
+</div> -->
+
+
+{% endblock %}

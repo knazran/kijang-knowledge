@@ -1,0 +1,95 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Regulation School</h1>
+        <p class="lead">This is where you learn how to be a good regulator. Something something I ACTED something something</p>
+        <br>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('register_course') }}" role="button" style="float:right; font-size:16px">Register</a>
+      </div>
+</div>
+<div class="row">
+    <div class="col-md-9 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-header">
+            <p class="card-title"style="margin:0px;">Course Description</p>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
+            <p class="card-text"><small class="text-muted">Posted today</small></p>
+            <p class="card-text"><small class="text-muted">Tags: Economics, Research Methods</small></p>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            
+            <br>
+            <h5 class="card-title" style='margin-bottom:16px'>Course Pre-Requisite</h5>
+            <p class="card-text">Gotta be BNM staff and kinda smart, I guess?</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-header">
+              <p class="card-title"style="margin:0px;">Other Interested Staff</p>
+          </div>
+          <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Herman Beck
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Messsy Adam
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        John Richards
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Peter Meggik
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Edward
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        John Doe
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Henry Tom
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+</div>
+<div class="row">
+  <div class="col-md-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-header">
+            <p class="card-title"style="margin:0px;">Course Materials</p>
+        </div>
+        <div class="card-body">
+            <p class="card-text text-muted">No course material posted yet</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}

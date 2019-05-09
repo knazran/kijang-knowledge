@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+<!-- Content template -->
+{% block content %}
+  <h3> {{ result_msg }} "{{ query }}"</h3>
+   <h5> {{ result_count }}  results found</h5>
+  {% for n in results %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h4>{{n['title'] }}</h4>
+    </div>
+    <div class="panel-body">
+      <p>Category: {{ n['category'] }}</p>
+      <p>Database: {{ n['db'] }}</p>
+      <p>Report: {{ n['report'] | format_report}}</p>
+      <p>Item ID:  {{ n['id']}} </p>
+      <p>Description: {{ n['desc'] }}</p>
+    </div>
+  </div>
+  {% endfor %}
+{% endblock %}
+
+<!-- Side bar template -->
+{% block sidebar %}
+<div class="panel panel-primary">
+  <div class="panel panel-heading">
+    <h4>Additional Filters</h4>
+  </div>
+  <!-- <div class="panel-body" style="min-height: 65%"> -->
+   <ul class="list-group">
+     <li class="list-group-item">
+     <a href="{{ url_for('category_list', category='Banking')}}">
+          Some filter
+      </a>
+     </li>
+   </ul>
+ <!-- </div> -->
+</div>
+{% endblock %}
