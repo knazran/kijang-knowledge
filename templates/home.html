@@ -10,61 +10,176 @@
             </div>
         </div>   
       </div>
-    <div class="input-group" style='width:85%; margin-left: auto; margin-right: auto'>
+    <!-- <div class="input-group" style='width:85%; margin-left: auto; margin-right: auto'>
         <div class="input-group-prepend">
           <span class="input-group-text" id="search">
             <i class="mdi mdi-magnify"></i>
           </span>
         </div>
         <input type="text" class="form-control" placeholder="Search Course Catalogue" aria-label="search" aria-describedby="search">
+      </div> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 grid-margin stretch-card" >
+      <div class="card">
+        <div class="card-body dashboard-tabs p-0">
+          <ul class="nav nav-tabs px-4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Your Learning Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses" aria-selected="false">Course Status</a>
+            </li>
+          </ul>
+          <div class="tab-content py-0 px-0">
+            <div class="tab-pane fade active show" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+              <div class="d-flex flex-wrap justify-content-xl-between">
+                <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                  <i class="mdi mdi mdi-calendar-check mr-3 icon-lg text-success"></i>
+                  <div class="d-flex flex-column justify-content-around">
+                    <small class="mb-1 text-muted">Course Attended</small>
+                    <h5 class="mr-2 mb-0">3</h5>
+                  </div>
+                </div>
+                <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                  <i class="mdi mdi mdi-calendar-multiple mr-3 icon-lg text-primary"></i>
+                  <div class="d-flex flex-column justify-content-around">
+                    <small class="mb-1 text-muted">Upcoming Course</small>
+                    <h5 class="mr-2 mb-0">1</h5>
+                  </div>
+                </div>
+                <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                  <i class="mdi mdi-book-open-variant mr-3 icon-lg text-warning"></i>
+                  <div class="d-flex flex-column justify-content-around">
+                    <small class="mb-1 text-muted">Knowledge Contributions</small>
+                    <h5 class="mr-2 mb-0">14</h5>
+                  </div>
+                </div>
+                <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                  <i class="mdi mdi-currency-usd mr-3 icon-lg text-primary"></i>
+                  <div class="d-flex flex-column justify-content-around">
+                    <small class="mb-1 text-muted">LnD Investment</small>
+                    <h5 class="mr-2 mb-0">RM 5,890</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
+                <div class="d-flex flex-wrap justify-content-xl-between">
+                    <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Course Statuses</th>
+                              <!-- <th>Status</th> -->
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Onboarding Programme 2019</td>
+                              
+                              <td><label class="badge badge-success">Completed</label></td>
+                            </tr>
+                            
+                            <tr>
+                              <td>Python Programming for Data Science</td>
+                              <td><label class="badge badge-danger">KSS Overdue</label></td>
+                            </tr>
+                            <tr>
+                              <td>Study Visit to ECB</td>
+                              <td><label class="badge badge-danger"> Rejected</label></td>
+                            </tr>
+                            <tr>
+                              <td>RegSchool</td>
+                              <td><label class="badge badge-warning">Pending Approval</label></td>
+                            </tr>
+                            <tr>
+                              <td>ISI World Statistic Congress 2019</td>
+                              <td><label class="badge badge-info">Approved</label></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="col-md-4 grid-margin stretch-card" >
+      <div class="card">
+        
+          <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="mdi mdi-magnify text-primary"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search Course Catalogue" aria-label="search" aria-describedby="search">
+          </div>
+          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-left p-3 item">
+              <i class="mdi mdi-calendar-plus mr-3 icon-lg text-success"></i>
+              <div class="d-flex flex-column justify-content-around">
+                <small class="mb-1 text-muted">Courses Available</small>
+                <h5 class="mr-2 mb-0">29</h5>
+              </div>
+          </div>
+      </div>
     </div>
+  </div>
     <div class="row">
       <div class="col-md-4 grid-margin stretch-card">
           <div class="card">
               <div class="card-header bg-primary ">
-                  <p class="card-title"style="margin:0px; color:white">Your Learning and Development Journey</p>
+                  <p class="card-title"style="margin:0px; color:white">Colleagues Upcoming Courses</p>
               </div>
               <div class="card-body">
-                  <p class="card-description">
-                    Some statistics on your LnD journey
-                  </p>
                   <!-- <p class="card-text">Course Status Snapshot</p> -->
                   <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Course Statuses</th>
-                          <!-- <th>Status</th> -->
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Onboarding Programme 2019</td>
-                          
-                          <td><label class="badge badge-success">Completed</label></td>
-                        </tr>
-                        
-                        <tr>
-                          <td>Python Programming for Data Science</td>
-                          <td><label class="badge badge-danger">KSS Overdue</label></td>
-                        </tr>
-                        <tr>
-                          <td>Study Visit to ECB</td>
-                          <td><label class="badge badge-danger"> Rejected</label></td>
-                        </tr>
-                        <tr>
-                          <td>RegSchool</td>
-                          <td><label class="badge badge-warning">Pending Approval</label></td>
-                        </tr>
-                        <tr>
-                          <td>ISI World Statistic Congress 2019</td>
-                          <td><label class="badge badge-info">Approved</label></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Profile</th>
+                            <th>VatNo.</th>
+                            <th>Created</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Jacob</td>
+                            <td>53275531</td>
+                            <td>12 May 2017</td>
+                            <td><label class="badge badge-danger">Pending</label></td>
+                          </tr>
+                          <tr>
+                            <td>Messsy</td>
+                            <td>53275532</td>
+                            <td>15 May 2017</td>
+                            <td><label class="badge badge-warning">In progress</label></td>
+                          </tr>
+                          <tr>
+                            <td>John</td>
+                            <td>53275533</td>
+                            <td>14 May 2017</td>
+                            <td><label class="badge badge-info">Fixed</label></td>
+                          </tr>
+                          <tr>
+                            <td>Peter</td>
+                            <td>53275534</td>
+                            <td>16 May 2017</td>
+                            <td><label class="badge badge-success">Completed</label></td>
+                          </tr>
+                          <tr>
+                            <td>Dave</td>
+                            <td>53275535</td>
+                            <td>20 May 2017</td>
+                            <td><label class="badge badge-warning">In progress</label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                 </div>
           </div>
       </div>
