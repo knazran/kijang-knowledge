@@ -10,18 +10,10 @@
             </div>
         </div>   
       </div>
-    <!-- <div class="input-group" style='width:85%; margin-left: auto; margin-right: auto'>
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="search">
-            <i class="mdi mdi-magnify"></i>
-          </span>
-        </div>
-        <input type="text" class="form-control" placeholder="Search Course Catalogue" aria-label="search" aria-describedby="search">
-      </div> -->
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 grid-margin stretch-card" >
+    <div class="col-md-12 grid-margin stretch-card" >
       <div class="card">
         <div class="card-body dashboard-tabs p-0">
           <ul class="nav nav-tabs px-4" role="tablist">
@@ -66,7 +58,7 @@
               </div>
             </div>
             <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
-                <div class="d-flex flex-wrap justify-content-xl-between">
+                <div class="d-flex flex-wrap justify-content-md-between">
                     <div class="table-responsive">
                         <table class="table">
                           <thead>
@@ -107,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 grid-margin stretch-card" >
+    <!-- <div class="col-md-4 grid-margin stretch-card" >
       <div class="card">
         
           <div class="input-group">
@@ -126,7 +118,7 @@
               </div>
           </div>
       </div>
-    </div>
+    </div> -->
   </div>
     <div class="row">
       <div class="col-md-4 grid-margin stretch-card">
@@ -140,8 +132,8 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <th>Profile</th>
-                            <th>VatNo.</th>
+                            <th>Name</th>
+                            <th>Course</th>
                             <th>Created</th>
                             <th>Status</th>
                           </tr>
@@ -183,14 +175,78 @@
                 </div>
           </div>
       </div>
-      <div class="col-md-8 grid-margin stretch-card">
+      <div class="col-md-4 grid-margin stretch-card">
           <div class="card">
           <div class="card-header bg-primary ">
-              <p class="card-title"style="margin:0px; color:white">Explore Training Courses</p>
+              <p class="card-title"style="margin:0px; color:white">Past Training Courses</p>
           </div>
           <div class="card-body">
               <div class="row">
-                  <div class="col-sm-4">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-body" style="padding: 1rem">
+                      <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
+                      <p class="card-text"><small class="text-muted">Posted today</small></p>
+                      <p class="card-text" style="float:left;"><small class="text-muted">Tags: Economics, Research Methods</small></p>
+                        <i class="mdi mdi-thumb-down-outline mr-2 icon-sm text-danger" style="float:right;">0</i>
+                        <i class="mdi mdi-thumb-up-outline mr-2 icon-sm text-success" style="float:right;">1</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-body" style="padding: 1rem">
+                        <label class="badge badge-success"style="float:right;">Materials Available</label></td>
+                      <h5 class="card-title" style='margin:0px;'>Special title treatment</h5>
+                      
+                      
+                      <p class="card-text" ><small class="text-muted">Posted today</small></p>
+                      <p class="card-text" style="float:left;"><small class="text-muted">Tags: Economics, Research Methods</small></p>
+                        <i class="mdi mdi-thumb-down-outline mr-2 icon-sm text-danger" style="float:right;">3</i>
+                        <i class="mdi mdi-thumb-up-outline mr-2 icon-sm text-success" style="float:right;">20</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-body" style="padding: 1rem">
+                      <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
+                      <p class="card-text"><small class="text-muted">Posted today</small></p>
+                      <p class="card-text" style="float:left;"><small class="text-muted">Tags: Economics, Research Methods</small></p>
+                        <i class="mdi mdi-thumb-down-outline mr-2 icon-sm text-danger" style="float:right;">5</i>
+                        <i class="mdi mdi-thumb-up-outline mr-2 icon-sm text-success" style="float:right;">1</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <div class="col-md-4 grid-margin stretch-card">
+          <div class="card">
+          <div class="card-header bg-primary ">
+              <p class="card-title"style="margin:0px; color:white">Courses and Programmes for You</p>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="search">
+                    <i class="mdi mdi-magnify text-primary"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search Course Catalogue" aria-label="search" aria-describedby="search">
+                </div>
+            </div>
+            <br>
+              <div class="row">
+                  <div class="col-sm-12">
                     <div class="card">
                       <div class="card-body">
                         <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
@@ -201,32 +257,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
-                          <p class="card-text"><small class="text-muted">Posted today</small></p>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <p class="card-text"><small class="text-muted">Tags: Economics, Research Methods</small></p>
-                          <a href="{{ url_for('course_page') }}" style="float:right; font-size:14px"> More Info</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
-                            <p class="card-text"><small class="text-muted">Posted today</small></p>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Tags: Economics, Research Methods</small></p>
-                            <a href="{{ url_for('course_page') }}" style="float:right; font-size:14px"> More Info</a>
-                          </div>
-                        </div>
-                      </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-12">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
@@ -237,7 +271,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4">
+                  </div>
+                  <br>
+                  <div class="row">
+                      <div class="col-sm-12">
                         <div class="card">
                           <div class="card-body">
                             <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
@@ -248,7 +285,10 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-4">
+                    </div>
+                    <br>
+                    <!-- <div class="row">
+                        <div class="col-sm-12">
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title" style='margin:0px'>Special title treatment</h5>
@@ -259,23 +299,7 @@
                             </div>
                           </div>
                         </div>
-                  </div>
-              <!-- <div class="card-deck">
-                  <div class="card">
-                      <p class="card-title">Total sales</p>
-                      <h1>$ 28835</h1>
-                      <h4>Gross sales over the years</h4>
-                      <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
-                      <div id="total-sales-chart-legend"></div>             
-                  </div>
-                  <div class="card">
-                      <p class="card-title">Total sales</p>
-                      <h1>$ 28835</h1>
-                      <h4>Gross sales over the years</h4>
-                      <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
-                      <div id="total-sales-chart-legend"></div>             
-                  </div>
-              </div> -->
+                      </div> -->
               <br>
           <a href="#" style="float:right; font-size:16px"> More Courses</a>   
           </div>
